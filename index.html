@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="utf-8">
+<style media="screen">
+
+#text {
+  width: 25%;
+  float: left;
+  margin-top: 7%;
+  margin-left: 3%;
+}
+
+#viz {
+  width: 65%;
+  float: right;
+  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+<script src="d3.js"></script>
+<script src="d3plus.js"></script>
+
+<div id="text">
+  <h2>Treemap</h2>
+  <p>La energía solar en Chile tiene el potencial de producir la totalidad de la electricidad usada en el país, mientras que la zona norte de Chile posee la mayor incidencia solar del mundo, concentrándose la principal en el desierto de Atacama y sus alrededores.1​ Además, Chile concentra una de las mayores reservas mundiales de litio, mineral utilizado frecuentemente en la elaboración de paneles para la producción de energía solar fotovoltaica.</p>
+  <a href="https://d3plus.org/examples/basic/9029130/">Treemap on D3plus</a>
+</div>
+
+<div id="viz"></div>
+
+<script>
+
+
+d3.json("Becaindigena_Superior_2016.json", function(error, ourdata) {
+  if (error) return console.error(error);
+  make_viz(ourdata);
+});
+
+function make_viz(data){
+  var visualization = d3plus.viz()
+      .container("#viz")
+      .data(data)
+      .type("tree_map")
+      .id("ID Comuna") // Escoger categoria
+      .size("Total Becados") // Escoger el tamaño de cada categoria
+      .draw()
+}
+
+//// Recomendación:
+// id, Nombre Región Domicilio Familiar
+// size, Total Becados
+
+</script>
