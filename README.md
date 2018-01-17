@@ -5,16 +5,16 @@ visdatos-workshop january 2018
 
 ## Herramientas
 
-*framework dataviz (creadores de datawheel)
-*d3plus
+* framework dataviz (creadores de datawheel)
+* d3plus
 
 ## TIPOS DE DATA-VIS
 
-vis conceptual => son con datos definidos (simplificar, enseñar)
-vis declarativo => documentar, diseñar, afirmar algo.
+* vis conceptual => son con datos definidos (simplificar, enseñar)
+* vis declarativo => documentar, diseñar, afirmar algo.
 
-data-driven => estadisticas, informar
-exploratorio => prototipar, interectuar, automatizar, confirmar
+* data-driven => estadisticas, informar
+* exploratorio => prototipar, interectuar, automatizar, confirmar
 
 
 ## PROCESO DE VISUALIZACION DE DATOS
@@ -30,13 +30,14 @@ exploratorio => prototipar, interectuar, automatizar, confirmar
 ## FORMATO TABULAR OBJETOS
 
 son como un excel pero mas ligero.
-(tsv > se separa por tab -)
-(csv > se separa por ,)
+* (tsv > se separa por tab -)
+* (csv > se separa por ,)
 
 
-EJERCICIO 1
+### EJERCICIO 1
 
-parametros:	1. llamar datos
-		2. escoger type()
-		3. seleccionar id()
-		4. identificar size()
+parametros:	
+1. llamar datos
+2. escoger type()
+3. seleccionar id()
+4. identificar size()
